@@ -12,12 +12,16 @@ function App() {
     4: -1,
     5: -1,
   });
+  const [imgfile, setImg] = useState();
 
   const handleClick = () => {
     setdata(data);
     console.log(data);
   };
 
+  const getimg = (event) => {
+    setImg(URL.createObjectURL(event.target.files[0]));
+  };
   const ans1 = (event) => {
     data[1] = parseInt(event.target.value);
   };
@@ -36,6 +40,11 @@ function App() {
 
   return (
     <div className="App">
+      <div className="Imgdiv">
+        <h2>Add Image:</h2>
+        <input type="file" onChange={getimg} />
+        <img src={imgfile}></img>
+      </div>
       <div className="Anskey">
         <h2 className="Headinginp">
           Enter answers to the five questions (0 being A, 1 being B and so on
