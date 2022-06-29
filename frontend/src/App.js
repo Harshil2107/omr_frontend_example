@@ -19,51 +19,60 @@ function App() {
   };
 
   const ans1 = (event) => {
-    data[1] = event.target.value;
+    data[1] = parseInt(event.target.value);
   };
   const ans2 = (event) => {
-    data[2] = event.target.value;
+    data[2] = parseInt(event.target.value);
   };
   const ans3 = (event) => {
-    data[3] = event.target.value;
+    data[3] = parseInt(event.target.value);
   };
   const ans4 = (event) => {
-    data[4] = event.target.value;
+    data[4] = parseInt(event.target.value);
   };
   const ans5 = (event) => {
-    data[5] = event.target.value;
+    data[5] = parseInt(event.target.value);
   };
-  // // Using useEffect for single rendering
-  // useEffect(() => {
-  //   // Using fetch to fetch the api from
-  //   // flask server it will be redirected to proxy
-  //   fetch("/data").then((res) =>
-  //     res.json().then((data) => {
-  //       // Setting a data from api
-  //       setdata({
-  //         name: data.Name,
-  //         age: data.Age,
-  //         programming: data.programming,
-  //       });
-  //     })
-  //   );
-  // }, []);
 
   return (
     <div className="App">
-      <h2>
-        Enter answers to the five questions with 0 being A, 1 being B and so on
-        till 4 being E
-      </h2>
-      <input onChange={ans1} placeholder="Answer for questoin 1" />
-      <input onChange={ans2} placeholder="Answer for questoin 2" />
-      <input onChange={ans3} placeholder="Answer for questoin 3" />
-      <input onChange={ans4} placeholder="Answer for questoin 4" />
-      <input onChange={ans5} placeholder="Answer for questoin 5" />
+      <div className="Anskey">
+        <h2 className="Headinginp">
+          Enter answers to the five questions (0 being A, 1 being B and so on
+          till 4 being E)
+        </h2>
+        <div>
+          <input
+            onChange={ans1}
+            className="Inputdiv"
+            placeholder="Answer for questoin 1"
+          />
+          <input
+            onChange={ans2}
+            className="Inputdiv"
+            placeholder="Answer for questoin 2"
+          />
+          <input
+            onChange={ans3}
+            className="Inputdiv"
+            placeholder="Answer for questoin 3"
+          />
+          <input
+            onChange={ans4}
+            className="Inputdiv"
+            placeholder="Answer for questoin 4"
+          />
+          <input
+            onChange={ans5}
+            className="Inputdiv"
+            placeholder="Answer for questoin 5"
+          />
 
-      <button onClick={handleClick} className="btn_submit">
-        Submit Ans key
-      </button>
+          <button onClick={handleClick} className="btn_submit">
+            Submit Ans key
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
