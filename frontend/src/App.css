@@ -28,48 +28,15 @@
 .App-link {
   color: #61dafb;
 }
-
-.Anskey {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 30%;
-}
-
-.btn_submit{
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 10px 40px;
-  background: rgb(3, 199, 206) ;
-  border-radius: 7px;
-  border: transparent;
-  width: 200px;
-}
-
-.btn_submit:hover{
-  background: rgb(70, 218, 255);
-}
-
-.Inputdiv {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  min-width: 70%;
-  padding: 5px 24px;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.Headinginp {
+.heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 25px;
-  color: rgb(1, 102, 94);
+  font-size: 64px;
+  color: rgb(30, 109, 36);
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+.Anskey {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+  }
+  
+  .btn_submit{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+    background: rgb(30, 109, 36) ;
+    border-radius: 7px;
+    border: transparent;
+    width: 200px;
+  }
+  
+  .btn_submit:hover{
+    background: rgb(55, 194, 90);
+  }
+  
+  .Inputdiv {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 70%;
+    padding: 5px 24px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .Headinginp {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(30, 109, 36);
+  }
+
+  .Imgdiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inp-img-div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .file_select {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 70%;
+    padding: 5px 24px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(30, 109, 36);
+  }
